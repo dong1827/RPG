@@ -1,0 +1,12 @@
+A wooden club with some spikes on it
+/
+Weapon
+Strength
+2
+Physical
+2
+/
+Adds 1 additional physical damage after damage calculation 
+Physical
+1
+/

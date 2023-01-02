@@ -1,0 +1,8 @@
+A piece of cloth that Goblins wear
+/
+Chest
+/
+Adds 5 to armour
+Armour
+5
+/

@@ -1,0 +1,5 @@
+A Chicken, looks pretty harmless
+10 1 0 0 0 0 0 5 100 200
+1
+Chicken Ring
+100

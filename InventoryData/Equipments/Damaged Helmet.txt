@@ -1,0 +1,11 @@
+A badly damaged helmet, doesn't really provide anything
+/
+Helmet
+/
+Adds 2 to armour
+Armour
+2
+Adds 5 to elemental resist
+Elemental Resist
+5
+/

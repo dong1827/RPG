@@ -1,0 +1,12 @@
+Description
+/
+type
+weapon scaling
+number
+damage type
+number
+/
+special 
+stat that is being changed
+number
+/

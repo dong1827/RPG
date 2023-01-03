@@ -1,0 +1,39 @@
+Helmet
+Empty
+Chest Piece
+Empty
+Arms
+Empty
+Legging
+Empty
+Boots
+Empty
+Ring
+Empty
+Weapon
+Empty
+0
+Health
+100
+Strength
+5
+Dexterity
+1
+Intelligence
+1
+Armour
+0
+Elemental Resist
+0
+Luck
+0
+Physical
+5
+Fire
+0
+Cold
+0
+Lightning
+0
+0
+0 1 0

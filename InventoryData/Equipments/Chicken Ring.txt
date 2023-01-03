@@ -1,0 +1,8 @@
+A ring that's in the shape of a chicken
+/
+Ring
+/
+Adds 2 base physical damage 
+Physical
+2
+/

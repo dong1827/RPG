@@ -1,0 +1,5 @@
+A shiny silver slime
+150 10 0 50 0 0 0 100 50 200
+1
+Shiny Silver Ring
+50

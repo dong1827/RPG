@@ -1,0 +1,8 @@
+A badly damaged legging, looks like it can fall apart at any moment
+/
+Legging
+/
+Adds 5 to elemental resist
+Elemental Resist
+5
+/

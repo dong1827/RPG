@@ -1,0 +1,8 @@
+A very shiny silver ring, something about it attracts you
+/
+Ring
+/
+Adds 5 base cold damage 
+Cold
+5
+/

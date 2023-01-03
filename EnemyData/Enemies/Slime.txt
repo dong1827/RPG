@@ -1,0 +1,7 @@
+A Slime, looks pretty weak
+40 1 0 20 0 0 0 20 100 200
+2
+Damaged Helmet
+50
+Damaged Legging
+100

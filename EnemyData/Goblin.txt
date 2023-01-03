@@ -1,7 +1,0 @@
-An ugly Goblin
-20 5 0 0 0 0 0 20 100 200
-2
-Wooden Club
-50
-Cheap Cloth
-100

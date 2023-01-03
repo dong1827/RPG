@@ -1,5 +1,0 @@
-A starting area for beginners. There are alot of Chickens, Slimes and Goblins.
-1000 4 , Goblin, 200, Slime, 450, Chicken, 940, Silver Slime, 950, 
-Mini Troll, 1000, 50, 
-
-200 for Goblin, 250 for Slime, 490 for Chicken, 50 for mini Troll, 10 for Silver Slime.

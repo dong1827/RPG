@@ -36,4 +36,7 @@ public class Items implements InventoryObjects {
         return special;
     }
 
+    public String getObType() {
+        return "Item";
+    }
 }

@@ -13,11 +13,12 @@ public class Wild extends Location {
     protected int discoveryRate;
 
     public Wild(String name) throws Exception {
+        // Initializing the wild
         this.name = name;
         actions.add("Walk around");
         actions.add("Travel");
         actions.add("Inventory");
-        File LocF = new File("LocationData\\" + name + ".txt");
+        File LocF = new File("LocationData\\WildData\\" + name + ".txt");
         Scanner LocS = new Scanner(LocF);
 
         des = LocS.nextLine();
@@ -35,8 +36,6 @@ public class Wild extends Location {
             x = LocS.next();
             Enemies.put(Temp, Integer.parseInt(x));
         }
-
-        // Consider creating rare enemies?
 
         // Creating Boss in the area
         LocS.nextLine();
@@ -79,14 +78,12 @@ public class Wild extends Location {
         // Creating random number for enemies
         Random rand = new Random();
 
-        int dis = 1 + rand.nextInt(discoveryRate);
+        int dis = rand.nextInt(discoveryRate);
 
-        dis = 150;
         // Iterate through the enemies to see which enemy was found
-        Set<String> keys = Enemies.keySet();
-        for (String k : keys) {
-            if (dis <= Enemies.get(k)) {
-                EnemyD = k;
+        for (Map.Entry<String, Integer> entry : Enemies.entrySet()) {
+            if (dis <= entry.getValue()) {
+                EnemyD = entry.getKey();
                 break;
             }
         }
@@ -102,7 +99,7 @@ public class Wild extends Location {
         return msg;
     }
 
-    public void BossFound () {
+    public void bossFound () {
         discoveryRate -= BossDis;
         BossDis = 0;
         actions.add("Challenge Boss");

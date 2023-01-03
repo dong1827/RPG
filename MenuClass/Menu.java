@@ -94,6 +94,15 @@ public class Menu {
             msg = p.remove(act);
             focus = "Location";
         }
+        else if (focus.equals("lvl")) {
+            if (act == 5) {
+                focus = "Location";
+                msg = this.getA();
+            }
+            else {
+                msg = p.useStatPoint(act);
+            }
+        }  
         
 
         // Check the side effect of the action
@@ -119,6 +128,19 @@ public class Menu {
             focus = "Inventory";
             msg = Inventory.getActs();
         }
+        // If the player selected inspect self
+        else if (msg.equals("Inspect Self")) {
+            msg = p.inspectSelf() + "\n\n" + this.getA();
+        }
+        else if (msg.equals("Use lvl Points")) {
+            if (p.getlvlPoint() > 0) {
+                focus = "lvl";
+                msg = p.getlvlPointString();
+            }
+            else {
+                msg = "no lvl point available\n\n" + this.getA();
+            }
+        }
         
 
         // Check for side effect of combat
@@ -126,10 +148,8 @@ public class Menu {
             msg = this.getA();
         }
         else if (msg.equals("Player died")) {
-            System.out.println("Player died... Returning to base");
-            TimeUnit.SECONDS.sleep(1);
+            msg = "Player died... Returning to base\n\n" + this.getA();
             this.travel("Base");
-            msg = this.getA();
         }
 
         // Check for side effect of opening inventory 
@@ -137,14 +157,16 @@ public class Menu {
             focus = "Location";
             msg += this.getA();
         }
+
+        // Check the side effect for using lvl points
+        if (msg.contains("no lvl points left")) {
+            focus = "Location";
+            msg += this.getA();
+        }
         
         // Error Checking
         if (msg.equals("")) {
-            msg = "Invalid action";
-        }
-
-        if (msg.equals("Invalid action")) {
-            msg += "\n \n" + this.getA();
+            msg = "Invalid action\n\n" + this.getA();
         }
     
         return msg;
@@ -180,9 +202,4 @@ public class Menu {
     }
 
 
-    // Combat System
-    public String combat() {
-        String msg = "";
-        return msg;
-    }
 }

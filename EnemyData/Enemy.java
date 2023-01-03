@@ -15,7 +15,7 @@ public class Enemy {
 
     public Enemy(String n) throws Exception {
         name = n;
-        File eneF = new File("EnemyData\\" + name + ".txt");
+        File eneF = new File("EnemyData\\Enemies\\" + name + ".txt");
         Scanner eneS = new Scanner(eneF);
 
         des = eneS.nextLine();

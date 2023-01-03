@@ -10,4 +10,5 @@ public interface InventoryObjects {
     public abstract String getName();
     public abstract String getType();
     public abstract LinkedHashMap<String, Map.Entry<String, Integer>> getSpecial();
+    public abstract String getObType();
 }

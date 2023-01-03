@@ -1,3 +1,0 @@
-Description
-discovery chance Enemy total , Enemy name, Enemy chance
-Boss, discovery chance, without discovery, 

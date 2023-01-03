@@ -1,5 +1,6 @@
 package MenuClass;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -21,7 +22,7 @@ public class Combat {
         curEnemy = new Enemy(name);
     }
 
-    public String fight(Player player) throws InterruptedException {
+    public String fight(Player player) throws Exception {
         String msg = "";
         p = player;
         System.out.println("Fight start");
@@ -107,6 +108,7 @@ public class Combat {
             
         }
         
+        System.out.println(p.save());
         return msg;
     }
 

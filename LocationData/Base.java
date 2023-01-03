@@ -6,9 +6,9 @@ public class Base extends Location {
     public Base() {
         name = "Base";
         actions.add("Travel");
-        actions.add("Crafting");
         actions.add("Inventory");
-        actions.add("Use stat points");
+        actions.add("Inspect Self");
+        actions.add("Use lvl Points");
 
         des = "Home sweet home.";
 
@@ -20,11 +20,19 @@ public class Base extends Location {
         if (i == 0) {
             msg = "Change Location";
         }
-
-        if (i == 2) {
+        else if (i == 1) {
             msg = "Open Inventory";
         }
+        else if (i == 2) {
+            msg = "Inspect Self";
+        }
+        else if (i == 3) {
+            msg = "Use lvl Points";
+        }
+        
         return msg;
+
+        
     }
 
 

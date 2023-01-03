@@ -70,27 +70,24 @@ public class Equipment implements InventoryObjects {
         String strSlot;
         switch (slot) {
             case 0: 
-                strSlot = "Head";
+                strSlot = "Helmet";
                 break;
             case 1:
-                strSlot = "Chest";
+                strSlot = "Chest Piece";
                 break;
             case 2:
                 strSlot = "Arms";
                 break;
             case 3:
-                strSlot = "Legs";
+                strSlot = "Legging";
                 break;
             case 4: 
                 strSlot = "Boots";
                 break;
             case 5: 
-                strSlot = "Left Ring";
+                strSlot = "Ring";
                 break;
-            case 6:
-                strSlot = "Right Ring";
-                break;
-            case 7: 
+            case 6: 
                 strSlot = "Weapon";
                 break;
             default:
@@ -115,6 +112,11 @@ public class Equipment implements InventoryObjects {
     // Return the speical effect of the item
     public LinkedHashMap<String, Map.Entry<String, Integer>> getSpecial() {
         return special;
+    }
+
+    // return which inventory type it belongs to
+    public String getObType() {
+        return "Equipment";
     }
 
 }
